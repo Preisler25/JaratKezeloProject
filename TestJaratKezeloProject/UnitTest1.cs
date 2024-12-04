@@ -29,7 +29,7 @@ namespace TestJaratKezeloProject
         {
             var indulas = new DateTime(2024, 12, 1, 10, 0, 0);
             jaratKezelo.UjJarat("123", "BUD", "LON", indulas);
-            jaratKezelo.Keses("123", 30); // 30 perces késés
+            jaratKezelo.Keses("123", 30); 
 
             var expected = indulas.AddMinutes(30);
             Assert.AreEqual(expected, jaratKezelo.MikorIndul("123"));
